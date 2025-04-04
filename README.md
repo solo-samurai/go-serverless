@@ -6,7 +6,7 @@ A modern serverless application built with Go and Fiber framework, deployed on V
 
 - Built with Go and Fiber framework
 - Serverless deployment on Vercel
-- Environment configuration support
+- Clerk Authorization
 - Hot reloading during development (using Air)
 - Clean project structure
 
