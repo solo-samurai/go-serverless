@@ -19,6 +19,7 @@ func Register(app *fiber.App) {
 
 	app.Get("/ping", handler.Ping)
 	app.Get("/health", handler.Health)
+	app.Get("/", handler.Index)
 
 	key := os.Getenv("CLERK_SECRET_KEY")
 
