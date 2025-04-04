@@ -1,0 +1,16 @@
+{
+  "name": "go-serverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "setup": "pnpm vercel login && pnpm vercel link",
+    "start": "pnpm vercel dev",
+    "dev": "pnpm start"
+  },
+  "dependencies": {
+    "vercel": "^41.4.1"
+  }
+}

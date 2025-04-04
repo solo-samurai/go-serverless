@@ -1,0 +1,93 @@
+host: golang-vercel.vercel.app
+info:
+  contact: {}
+  description: API Documentation for Golang deployment in vercel serverless environment
+  title: Golang Vercel Deployment
+  version: "1.0"
+paths:
+  /:
+    get:
+      consumes:
+      - application/json
+      description: Main entry point of the API
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: Returns welcome message
+          schema:
+            type: string
+      summary: Index Page
+      tags:
+      - Welcome
+  /health:
+    get:
+      consumes:
+      - application/json
+      description: Endpoint to check the health status of the service
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Returns service health status
+          schema:
+            type: object
+        "500":
+          description: Server Error
+          schema:
+            type: object
+      summary: Health Check
+      tags:
+      - System
+  /hello/:name:
+    get:
+      consumes:
+      - application/json
+      description: Endpoint to Welcome user and say Hello "Name"
+      parameters:
+      - description: Name in the URL param
+        in: query
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: success
+          schema:
+            type: object
+        "400":
+          description: Request Error or parameter missing
+          schema:
+            type: object
+        "404":
+          description: When user not found
+          schema:
+            type: object
+        "500":
+          description: Server Error
+          schema:
+            type: object
+      summary: Hello User
+      tags:
+      - Welcome
+  /ping:
+    get:
+      consumes:
+      - application/json
+      description: Simple ping-pong endpoint to check if the server is running
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: Returns pong response
+          schema:
+            type: object
+      summary: Ping Endpoint
+      tags:
+      - System
+schemes:
+- https
+- http
+swagger: "2.0"
