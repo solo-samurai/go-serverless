@@ -1,12 +1,13 @@
 # Go Serverless Application
 
-A modern serverless application built with Go and Fiber framework, deployed on Vercel.
+A modern serverless API built with Go and Fiber framework, deployed on Vercel.
 
 ## 🚀 Features
 
 - Built with Go and Fiber framework
 - Serverless deployment on Vercel
 - Clerk Authorization
+- Swagger API documentation
 - Hot reloading during development (using Air)
 - Clean project structure
 
