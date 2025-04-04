@@ -12,7 +12,7 @@ A modern serverless application built with Go and Fiber framework, deployed on V
 
 ## 📋 Prerequisites
 
-- Go 1.16 or higher
+- Go 1.24.1
 - Node.js and pnpm
 - Vercel CLI
 - Git
