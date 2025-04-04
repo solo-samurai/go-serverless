@@ -113,4 +113,4 @@ Create a `.env` file in the root directory with the following variables:
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE).
